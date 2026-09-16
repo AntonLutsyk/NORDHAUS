@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><script src="./ds-base.js"></script><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><style>body{margin:0;background:#E9E8E3;font-family:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif}a{color:#111111}a:hover{color:#777C68}</style></helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;gap:22px;padding:36px 24px 56px;background:#E9E8E3">
+<div style="display:flex;align-items:baseline;gap:14px">
+<span style="font-weight:500;font-size:14px;letter-spacing:.2em;color:#111211">NORDHAUS</span>
+<span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Mobile preview</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;padding:5px;border:1px solid #D7D6D0;border-radius:999px;background:#F5F4F0">
+<button type="button" onClick="{{ set320 }}" style="padding:8px 16px;border:0;border-radius:999px;background:{{ fill320 }};color:{{ tone320 }};font-family:inherit;font-size:12px;letter-spacing:.06em;cursor:pointer;transition:background 200ms,color 200ms">320</button>
+<button type="button" onClick="{{ set375 }}" style="padding:8px 16px;border:0;border-radius:999px;background:{{ fill375 }};color:{{ tone375 }};font-family:inherit;font-size:12px;letter-spacing:.06em;cursor:pointer;transition:background 200ms,color 200ms">375</button>
+<button type="button" onClick="{{ set390 }}" style="padding:8px 16px;border:0;border-radius:999px;background:{{ fill390 }};color:{{ tone390 }};font-family:inherit;font-size:12px;letter-spacing:.06em;cursor:pointer;transition:background 200ms,color 200ms">390</button>
+<button type="button" onClick="{{ set430 }}" style="padding:8px 16px;border:0;border-radius:999px;background:{{ fill430 }};color:{{ tone430 }};font-family:inherit;font-size:12px;letter-spacing:.06em;cursor:pointer;transition:background 200ms,color 200ms">430</button>
+<span style="width:1px;height:20px;background:#D7D6D0"></span>
+<button type="button" onClick="{{ reload }}" style="padding:8px 16px;border:0;border-radius:999px;background:none;color:#6F706D;font-family:inherit;font-size:12px;letter-spacing:.06em;cursor:pointer;transition:color 200ms" style-hover="color:#111111">Reload</button>
+</div>
+{{ phone }}
+<span style="max-width:46ch;text-align:center;font-size:13px;line-height:1.6;color:#6F706D">A real viewport at the chosen width — the menu overlay, plan selector and step rail behave as they do on a phone. Reload after each edit to the landing page.</span>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:560,&quot;height&quot;:1060}}">
+const SIZES = { 320: 720, 375: 812, 390: 844, 430: 932 };
+
+class Component extends DCLogic {
+  state = { w: 390, n: 0 };
+
+  renderVals() {
+    const w = this.state.w;
+    const h = SIZES[w];
+    const pick = (v) => ({
+      ["fill" + v]: w === v ? "#111211" : "transparent",
+      ["tone" + v]: w === v ? "#F5F4F0" : "#6F706D",
+      ["set" + v]: () => this.setState({ w: v }),
+    });
+    return {
+      ...pick(320), ...pick(375), ...pick(390), ...pick(430),
+      reload: () => this.setState((s) => ({ n: s.n + 1 })),
+      phone: React.createElement(
+        "div",
+        { style: { position: "relative", width: w + 22, height: h + 22, padding: 11, borderRadius: 52, background: "#111211", boxShadow: "0 30px 70px rgba(17,18,17,.28)" } },
+        React.createElement("div", { style: { position: "absolute", left: "50%", top: 0, transform: "translateX(-50%)", width: 118, height: 26, borderRadius: "0 0 16px 16px", background: "#111211", zIndex: 2 } }),
+        React.createElement("iframe", {
+          key: w + "-" + this.state.n,
+          src: "EditorialLanding.dc.html",
+          title: "NORDHAUS at " + w + "px",
+          style: { display: "block", width: w, height: h, border: 0, borderRadius: 42, background: "#F5F4F0" },
+        })
+      ),
+    };
+  }
+}
+
+</script>
+</body>
+</html>
