@@ -1,0 +1,7 @@
+/* NORDHAUS type faces.
+   Core grotesk: Manrope (Google Fonts) — display + UI + body.
+   Technical face: IBM Plex Mono — metadata, indices, spec tables.
+   Loaded from the Google Fonts CDN; no binaries are vendored in this project.
+   If you need offline/self-hosted builds, drop woff2 files in assets/fonts/
+   and replace this import with local @font-face rules. */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap");

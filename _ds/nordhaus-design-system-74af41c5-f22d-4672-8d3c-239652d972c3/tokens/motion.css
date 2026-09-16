@@ -1,0 +1,27 @@
+/* NORDHAUS motion — slow, even, architectural. Nothing bounces. */
+:root{
+  --ease-standard:cubic-bezier(.22,.61,.36,1); /* @kind other */
+  --ease-out-soft:cubic-bezier(.16,1,.3,1); /* @kind other */
+  --ease-in-out:cubic-bezier(.65,0,.35,1); /* @kind other */
+
+  --dur-instant:120ms; /* @kind other */
+  --dur-fast:200ms; /* @kind other */
+  --dur-base:320ms; /* @kind other */
+  --dur-slow:520ms; /* @kind other */
+  --dur-image:760ms; /* @kind other */   /* image scale on hover */
+  --dur-reveal:900ms; /* @kind other */  /* on-scroll reveal */
+
+  --transition-ui:var(--dur-fast) var(--ease-standard); /* @kind other */
+  --transition-line:var(--dur-base) var(--ease-out-soft); /* @kind other */
+  --transition-image:transform var(--dur-image) var(--ease-out-soft); /* @kind other */
+
+  --hover-image-scale:1.035; /* @kind other */
+  --arrow-travel:4px;
+}
+
+@keyframes nh-reveal-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes nh-fade-in{from{opacity:0}to{opacity:1}}
+.nh-reveal{animation:nh-reveal-up var(--dur-reveal) var(--ease-out-soft) both}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}

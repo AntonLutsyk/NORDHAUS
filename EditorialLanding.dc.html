@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><script src="./ds-base.js"></script><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><style>html{scroll-behavior:smooth}
+#dc-root [id]{scroll-margin-top:96px}
+body{margin:0;background:#F5F4F0;color:#111111;font-family:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif}a{color:#111111}a:hover{color:#777C68}
+#dc-root, #dc-root *{font-family:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif !important}
+#dc-root .sc-host-x > a{gap:18px !important}
+@media (max-width:1200px){#dc-root #hero-callouts{display:none}}
+#dc-root #contact form ::placeholder{color:rgba(245,244,240,.62)}
+#dc-root #contact form option{background:#F5F4F0;color:#111211}
+#dc-root .sc-host-x > a > div{border-top:0 !important;padding-top:0 !important}
+#dc-root .sc-host-x > a > div > span{margin-top:0 !important}
+#dc-root{--radius-lg:24px;--radius-md:24px;--font-mono:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif;--font-core:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif;--font-display:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif;--text-meta-font:400 11px/1.3 "Manrope","Helvetica Neue",Helvetica,Arial,sans-serif}
+@media (prefers-reduced-motion: no-preference){
+#dc-root.nh-motion [data-reveal]{opacity:0;transform:translateY(18px);transition:opacity 900ms cubic-bezier(.16,1,.3,1) var(--d,0ms),transform 900ms cubic-bezier(.16,1,.3,1) var(--d,0ms)}
+#dc-root.nh-motion [data-reveal].is-in{opacity:1;transform:none}
+#dc-root.nh-motion [data-reveal-img]{clip-path:inset(0 0 100% 0);transition:clip-path 1100ms cubic-bezier(.16,1,.3,1) var(--d,0ms)}
+#dc-root.nh-motion [data-reveal-img].is-in{clip-path:inset(0 0 0 0)}
+#dc-root [data-parallax]{will-change:transform}
+#dc-root [data-zoom] img,#dc-root [data-zoom] > div{transition:transform 760ms cubic-bezier(.16,1,.3,1)}
+#dc-root [data-zoom]:hover img,#dc-root [data-zoom]:hover > div{transform:scale(1.03)}
+#dc-root [data-arrow]{transition:transform 320ms cubic-bezier(.16,1,.3,1)}
+#dc-root a:hover [data-arrow],#dc-root button:hover [data-arrow]{transform:translate(3px,-3px)}
+#dc-root [data-hero-photo]{animation:nh-hero-photo 1600ms cubic-bezier(.16,1,.3,1) both}
+#dc-root [data-hero-word]{animation:nh-hero-rise 1100ms cubic-bezier(.16,1,.3,1) 260ms both}
+#dc-root [data-hero-ui]{animation:nh-hero-rise 900ms cubic-bezier(.16,1,.3,1) 520ms both}
+}
+@keyframes nh-hero-photo{from{opacity:0;transform:scale(1.035)}to{opacity:1;transform:none}}
+@keyframes nh-hero-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+</style></helmet>
+<div style="background:#F5F4F0;overflow-x:hidden">
+
+<section style="position:relative;background:#111211;color:#F5F4F0">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.SiteHeader" items="{{ nav }}" overlay="{{ true }}" phone="+47 73 84 10 60" hint-size="100%,72px"></x-import>
+<div style="position:relative;width:100%;aspect-ratio:1672 / 941;overflow:hidden">
+<div data-hero-photo style="position:absolute;inset:0;background:url(assets/hero-house.jpg) center center / cover no-repeat"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,18,17,.44) 0%,rgba(17,18,17,.28) 40%,rgba(17,18,17,0) 62%)"></div>
+<div data-hero-word style="position:absolute;left:0;right:0;bottom:43%;text-align:center;line-height:.78;pointer-events:none"><span style="font-weight:600;font-size:18.6vw;letter-spacing:-.05em;color:#F5F4F0">NORDHAUS</span></div>
+<div style="position:absolute;inset:0;background:url(assets/hero-foreground.png) center center / cover no-repeat"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,18,17,0) 62%,rgba(17,18,17,.62) 100%)"><div id="hero-callouts" style="position:absolute;inset:0;pointer-events:none"><div style="position: absolute; left: min(45.59%, calc(100% - 245px)); top: 71.39%; display: flex; align-items: center; gap: 10px; padding: 9px 18px; border-radius: 999px 999px 999px 0px; background: rgba(245,244,240,.12); backdrop-filter: blur(16px) saturate(1.1); -webkit-backdrop-filter: blur(16px) saturate(1.1); border: 1px solid rgba(245,244,240,.28); color: #F5F4F0; white-space: nowrap"><span style="width:7px;height:7px;border-radius:999px;background:#F5F4F0;opacity:.85"></span><span style="font-size:13px;letter-spacing:-.01em">Heating demand 31 kWh/m²·yr</span></div><div style="position: absolute; left: min(49.27%, calc(100% - 212px)); top: 53.51%; display: flex; align-items: center; gap: 10px; padding: 9px 18px; border-radius: 999px 999px 999px 0px; background: rgba(245,244,240,.12); backdrop-filter: blur(16px) saturate(1.1); -webkit-backdrop-filter: blur(16px) saturate(1.1); border: 1px solid rgba(245,244,240,.28); color: #F5F4F0; white-space: nowrap"><span style="width:7px;height:7px;border-radius:999px;background:#F5F4F0;opacity:.85"></span><span style="font-size:13px;letter-spacing:-.01em">Cross-laminated spruce</span></div><div style="position: absolute; left: min(79.94%, calc(100% - 254px)); top: 49.57%; display: flex; align-items: center; gap: 10px; padding: 9px 18px; border-radius: 999px 999px 999px 0px; background: rgba(245,244,240,.12); backdrop-filter: blur(16px) saturate(1.1); -webkit-backdrop-filter: blur(16px) saturate(1.1); border: 1px solid rgba(245,244,240,.28); color: #F5F4F0; white-space: nowrap"><span style="width:7px;height:7px;border-radius:999px;background:#F5F4F0;opacity:.85"></span><span style="font-size:13px;letter-spacing:-.01em">Fixed price, no provisional sums</span></div><div style="position: absolute; left: min(67.04%, calc(100% - 168px)); top: 57.5%; display: flex; align-items: center; gap: 10px; padding: 9px 18px; border-radius: 999px 999px 999px 0px; background: rgba(245,244,240,.12); backdrop-filter: blur(16px) saturate(1.1); -webkit-backdrop-filter: blur(16px) saturate(1.1); border: 1px solid rgba(245,244,240,.28); color: #F5F4F0; white-space: nowrap"><span style="width:7px;height:7px;border-radius:999px;background:#F5F4F0;opacity:.85"></span><span style="font-size:13px;letter-spacing:-.01em">Tested to −35 °C</span></div></div></div>
+
+
+
+
+
+
+<div data-hero-ui style="position:absolute;left:0;right:0;bottom:0;padding:0 32px 40px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:32px;align-items:end;max-width:1440px;margin:0 auto">
+
+
+<p style="margin:0;max-width:24ch;font-weight:500;font-size:clamp(20px,2vw,27px);line-height:1.22;letter-spacing:-.025em">Eleven weeks in a hall in Trondheim. Nine days on your ground.</p>
+<a href="#contact" style="justify-self:end;align-self:end;display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 6px 0 26px;background:#F5F4F0;border-radius:999px;text-decoration:none;color:#111111;font-size:15px;font-weight:500;letter-spacing:-.01em;white-space:nowrap;transition:background 200ms cubic-bezier(.2,0,.2,1)" style-hover="background:#E9E8E3">Book a consultation
+<span data-arrow style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;background:#E9E8E3;color:#111111">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Icon" name="arrow-right" size="{{ 16 }}" hint-size="16px,16px"></x-import>
+</span></a></div></div>
+</section>
+<section id="homes" style="max-width:1440px;margin:0 auto;padding:225px 32px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:stretch">
+<div data-reveal-img data-zoom style="grid-column:1 / span 6;border-radius:24px;overflow:hidden">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="portrait" radius="lg" src="{{ planSrc }}" placeholder-label="{{ planLabel }}" hint-size="100%,560px"></x-import>
+</div>
+<div style="grid-column:8 / span 5;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+<div data-reveal style="display:flex;flex-direction:column;gap:22px">
+<h2 style="margin:0;font-weight:500;font-size:clamp(30px,3.4vw,48px);line-height:1.02;letter-spacing:-.035em;max-width:13ch">Three plans. One structural grid.</h2>
+<p style="margin:0;max-width:34ch;font-size:15px;line-height:1.62;color:#6F706D">Every plan is 8.4 m deep and set out on a 2.8 m bay. Length, orientation and glazing change; the grid does not.</p>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;color:#6F706D;margin:auto 0">
+<button type="button" onClick="{{ pick1 }}" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto 20px;gap:16px;align-items:center;width:calc(100% + 32px);margin:0 -16px;padding:24px 16px;text-align:left;cursor:pointer;border:0;border-top:1px solid {{ rule1 }};background:{{ fill1 }};font-family:inherit;color:{{ tone1 }};transition:color 200ms,background 320ms cubic-bezier(.16,1,.3,1),border-color 320ms" style-hover="color:#111111">
+<span style="display:flex;flex-direction:column;gap:9px"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">01</span><span style="width:14px;height:1px;background:currentColor;opacity:{{ dot1 }};transition:opacity 320ms cubic-bezier(.16,1,.3,1)"></span></span>
+<span style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:500;font-size:23px;letter-spacing:-.03em">Haus 72</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.55">Two rooms for<br>a simpler life</span></span>
+<span style="display:flex;flex-direction:column;gap:7px;border-left:1px solid #D7D6D0;padding-left:18px;font-size:11px;letter-spacing:.05em;color:#6F706D"><span>2 rooms</span><span>72 m²</span><span>3 bays</span></span>
+<span style="font-size:15px;opacity:.4;justify-self:end">→</span>
+</button>
+<button type="button" onClick="{{ pick2 }}" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto 20px;gap:16px;align-items:center;width:calc(100% + 32px);margin:0 -16px;padding:24px 16px;text-align:left;cursor:pointer;border:0;border-top:1px solid {{ rule2 }};background:{{ fill2 }};font-family:inherit;color:{{ tone2 }};transition:color 200ms,background 320ms cubic-bezier(.16,1,.3,1),border-color 320ms" style-hover="color:#111111">
+<span style="display:flex;flex-direction:column;gap:9px"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">02</span><span style="width:14px;height:1px;background:currentColor;opacity:{{ dot2 }};transition:opacity 320ms cubic-bezier(.16,1,.3,1)"></span></span>
+<span style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:500;font-size:23px;letter-spacing:-.03em">Haus 118</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.55">More space<br>for what matters</span></span>
+<span style="display:flex;flex-direction:column;gap:7px;border-left:1px solid #D7D6D0;padding-left:18px;font-size:11px;letter-spacing:.05em;color:#6F706D"><span>4 rooms</span><span>118 m²</span><span>5 bays</span></span>
+<span style="font-size:15px;opacity:.4;justify-self:end">→</span>
+</button>
+<button type="button" onClick="{{ pick3 }}" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto 20px;gap:16px;align-items:center;width:calc(100% + 32px);margin:0 -16px;padding:24px 16px;text-align:left;cursor:pointer;border:0;border-top:1px solid {{ rule3 }};background:{{ fill3 }};font-family:inherit;color:{{ tone3 }};transition:color 200ms,background 320ms cubic-bezier(.16,1,.3,1),border-color 320ms" style-hover="color:#111111">
+<span style="display:flex;flex-direction:column;gap:9px"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">03</span><span style="width:14px;height:1px;background:currentColor;opacity:{{ dot3 }};transition:opacity 320ms cubic-bezier(.16,1,.3,1)"></span></span>
+<span style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:500;font-size:23px;letter-spacing:-.03em">Haus 164</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.55">A larger canvas<br>same principles</span></span>
+<span style="display:flex;flex-direction:column;gap:7px;border-left:1px solid #D7D6D0;padding-left:18px;font-size:11px;letter-spacing:.05em;color:#6F706D"><span>5 rooms</span><span>164 m²</span><span>7 bays</span></span>
+<span style="font-size:15px;opacity:.4;justify-self:end">→</span>
+</button>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#111211">{{ planName }}</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Technical index</span></div>
+<div data-reveal-group style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid #111211;padding-top:22px">
+<div data-reveal style="display:flex;flex-direction:column;gap:9px">
+<span style="font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:.9;letter-spacing:-.045em;color:#111211">{{ specArea }}<span style="font-size:12px;letter-spacing:0;color:#6F706D;padding-left:4px">m²</span></span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.35">Footprint</span>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;gap:9px;border-left:1px solid #D7D6D0;padding-left:16px">
+<span style="font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:.9;letter-spacing:-.045em;color:#111211">{{ specBays }}</span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.35">Bays</span>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;gap:9px;border-left:1px solid #D7D6D0;padding-left:16px">
+<span style="font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:.9;letter-spacing:-.045em;color:#111211">{{ specRidge }}<span style="font-size:12px;letter-spacing:0;color:#6F706D;padding-left:4px">m</span></span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.35">Ridge</span>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;gap:9px;border-left:1px solid #D7D6D0;padding-left:16px">
+<span style="font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:.9;letter-spacing:-.045em;color:#111211">{{ specGlazed }}<span style="font-size:12px;letter-spacing:0;color:#6F706D;padding-left:4px">m²</span></span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.35">Glazed</span>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;gap:9px;border-left:1px solid #D7D6D0;padding-left:16px">
+<span style="font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:.9;letter-spacing:-.045em;color:#111211">{{ specWeeks }}<span style="font-size:12px;letter-spacing:0;color:#6F706D;padding-left:4px">wks</span></span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D;line-height:1.35">In factory</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="process" style="padding:225px 0 0">
+<div style="display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);align-items:stretch;gap:0">
+<div data-reveal style="display:flex;flex-direction:column;align-items:flex-start;gap:38px;padding:36px 72px 64px max(32px,calc((100vw - 1440px)/2 + 32px))">
+<h2 style="margin:0;max-width:13ch;font-weight:400;font-size:clamp(40px,5.4vw,74px);line-height:1.02;letter-spacing:-.04em;text-wrap:pretty">A house should be finished before it reaches the site.</h2>
+<p style="margin:0;max-width:36ch;font-size:16px;line-height:1.62;color:#4A4B48">Most of the work happens under one roof. Structure, interiors and finishes are completed before the house ever reaches its landscape.</p>
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.ArrowLink" href="#homes" hint-size="auto,20px">Our process</x-import>
+</div>
+<div data-reveal-img data-parallax style="position:relative;min-height:460px;background:#1B1C1A url(assets/production-hall.jpg) center center / cover no-repeat;overflow:hidden;border-radius:24px 0 0 24px">
+
+</div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0,46fr) minmax(0,54fr); gap: 100px; align-items: start; padding: 104px max(32px,calc((100vw - 1440px)/2 + 32px)) 0; margin-top: 96px; height: auto">
+<div data-reveal style="display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); gap: 28px; align-items: center; max-width: 620px; justify-content: flex-end">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="landscape" radius="lg" src="assets/clt-stack.jpg" placeholder-label="Cross-laminated timber, stacked" alt="Stacked cross-laminated timber panels in the production hall" hint-size="100%,220px" style="width: 100%; margin: 0; background: url(&quot;./7aa93f7f-be50-4f29-9dba-eec64773ca96-mty8lnji-tihz.png&quot;) center / cover no-repeat"></x-import>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+<p style="margin:0;font-size:15px;line-height:1.62;color:#4A4B48;max-width:34ch">A cleaner, faster and more precise way to build. Every element is crafted indoors, protected from weather and tested before delivery.</p>
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.ArrowLink" href="#studio" hint-size="auto,20px">Our factory</x-import>
+</div>
+</div><div data-reveal style="display:flex;flex-direction:column;gap:43px;align-items:flex-start;max-width:640px;margin-left:-24px">
+
+<p style="margin:0;font-weight:400;font-size:clamp(26px,2.7vw,38px);line-height:1.2;letter-spacing:-.03em;text-wrap:pretty">Eleven weeks under one roof. Nine days on the plot.</p><div style="display:flex;gap:clamp(48px,8vw,120px);flex-wrap:wrap"><div style="display:flex;flex-direction:column;gap:14px"><span style="font-weight: 400; font-size: clamp(46px,6.4vw,72px); letter-spacing: -.05em; line-height: .86">11</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Weeks in the factory</span></div><div style="display:flex;flex-direction:column;gap:14px"><span style="font-weight: 400; font-size: clamp(46px,6.4vw,72px); letter-spacing: -.05em; line-height: .86">9</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Days on site</span></div></div>
+</div>
+
+
+</div>
+</section>
+
+<section style="max-width:1440px;margin:0 auto;padding:225px 32px 0">
+<div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:start;margin-bottom:72px">
+<h2 data-reveal style="grid-column:1 / span 6;margin:0;max-width:20ch;font-weight:500;font-size:clamp(30px,3.4vw,48px);line-height:1.02;letter-spacing:-.035em;text-wrap:pretty">From the first walk on the plot to keys: <span style="color:#6F706D">twenty-two weeks.</span></h2>
+<div data-reveal style="grid-column:8 / span 4;display:flex;align-items:flex-start;gap:20px;padding-top:8px">
+<span style="flex:0 0 38px;height:1px;margin-top:11px;background:#111211"></span>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#111211">A clear process.<br />Thoughtfully planned.<br />Beautifully delivered.</p>
+</div>
+</div>
+<div data-reveal-group style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:48px 32px">
+<div data-reveal style="display:flex;flex-direction:column;gap:0">
+<div data-zoom style="position:relative;border-radius:24px;overflow:hidden">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="portrait" radius="lg" src="assets/step-site-study.jpg" placeholder-label="Site study · the plot at first light, before anything is drawn" alt="Site study · the plot at first light, before anything is drawn" hint-size="100%,300px"></x-import>
+</div>
+<div style="position:relative;margin-top:26px;padding-top:24px;border-top:1px solid #D7D6D0">
+<span style="position:absolute;left:0;top:-3px;width:6px;height:6px;border-radius:999px;background:#111211"></span>
+<div style="display:flex;flex-direction:column;gap:6px">
+<span style="font-weight:400;font-size:clamp(28px,2.6vw,38px);line-height:.9;letter-spacing:-.045em">01</span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">2 weeks</span>
+</div>
+<span style="display:block;margin-top:22px;font-weight:500;font-size:19px;letter-spacing:-.025em">Site study</span>
+<span style="display:block;margin-top:8px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Understand the place</span>
+<p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:#6F706D;text-wrap:pretty">We walk the plot, take levels, read the ground survey, and tell you what it will carry and where the light lands in January.</p>
+</div>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;gap:0">
+<div data-zoom style="position:relative;border-radius:24px;overflow:hidden">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="portrait" radius="lg" src="assets/step-drawings.jpg" placeholder-label="Drawings · plan set and section on the studio table" alt="Drawings · plan set and section on the studio table" hint-size="100%,300px"></x-import>
+</div>
+<div style="position:relative;margin-top:26px;padding-top:24px;border-top:1px solid #D7D6D0">
+<span style="position:absolute;left:0;top:-3px;width:6px;height:6px;border-radius:999px;background:#111211"></span>
+<div style="display:flex;flex-direction:column;gap:6px">
+<span style="font-weight:400;font-size:clamp(28px,2.6vw,38px);line-height:.9;letter-spacing:-.045em">02</span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">6 weeks</span>
+</div>
+<span style="display:block;margin-top:22px;font-weight:500;font-size:19px;letter-spacing:-.025em">Drawings</span>
+<span style="display:block;margin-top:8px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Turn ideas into plans</span>
+<p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:#6F706D;text-wrap:pretty">Plan fixed, finishes chosen, price agreed in full before production begins. No provisional sums.</p>
+</div>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;gap:0">
+<div data-zoom style="position:relative;border-radius:24px;overflow:hidden">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="portrait" radius="lg" src="assets/step-factory.jpg" placeholder-label="Factory · modules under assembly in the production hall" alt="Factory · cross-laminated spruce stacked in the production hall" hint-size="100%,300px"></x-import>
+</div>
+<div style="position:relative;margin-top:26px;padding-top:24px;border-top:1px solid #D7D6D0">
+<span style="position:absolute;left:0;top:-3px;width:6px;height:6px;border-radius:999px;background:#111211"></span>
+<div style="display:flex;flex-direction:column;gap:6px">
+<span style="font-weight:400;font-size:clamp(28px,2.6vw,38px);line-height:.9;letter-spacing:-.045em">03</span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">11 weeks</span>
+</div>
+<span style="display:block;margin-top:22px;font-weight:500;font-size:19px;letter-spacing:-.025em">Factory</span>
+<span style="display:block;margin-top:8px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Built with care</span>
+<p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:#6F706D;text-wrap:pretty">Seventeen people in a hall in Trondheim, one house at a time, twelve houses a year.</p>
+</div>
+</div>
+<div data-reveal style="display:flex;flex-direction:column;gap:0">
+<div data-zoom style="position:relative;border-radius:24px;overflow:hidden">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="portrait" radius="lg" src="assets/step-assembly.jpg" placeholder-label="Assembly · the front door on the day of handover" alt="Assembly · the front door on the day of handover" hint-size="100%,300px"></x-import>
+</div>
+<div style="position:relative;margin-top:26px;padding-top:24px;border-top:1px solid #D7D6D0">
+<span style="position:absolute;left:0;top:-3px;width:6px;height:6px;border-radius:999px;background:#111211"></span>
+<div style="display:flex;flex-direction:column;gap:6px">
+<span style="font-weight:400;font-size:clamp(28px,2.6vw,38px);line-height:.9;letter-spacing:-.045em">04</span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">9 days</span>
+</div>
+<span style="display:block;margin-top:22px;font-weight:500;font-size:19px;letter-spacing:-.025em">Assembly</span>
+<span style="display:block;margin-top:8px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Move in and belong</span>
+<p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:#6F706D;text-wrap:pretty">Envelope closed on day four. Services connected on day seven. Keys on day nine.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<section style="margin-top:225px">
+<div data-reveal-img data-parallax><x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="panorama" radius="none" src="assets/assembly-panorama.jpg" alt="Volume set on the slab on assembly day four" hint-size="100%,46vw"></x-import></div><div data-reveal style="max-width: 1440px; margin: 0 auto; padding: 20px 32px 0; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 32px; align-items: baseline; justify-content: flex-start">
+<span style="font-size:11px;letter-spacing:.08em;color:#6F706D">0124 Lakeside House · Dalarna · 118 m²</span>
+<p style="margin:0;justify-self:end;max-width:34ch;font-size:15px;line-height:1.62;color:#6F706D">The slab is the only thing we pour. Everything above it arrives finished, on three trailers, in the order it goes together.</p>
+</div>
+</section>
+
+
+<section id="materials" class="nh-dark" style="position:relative;background:#111211;color:#F5F4F0;padding:225px 0">
+<div style="position:absolute;top:-72px;bottom:-72px;right:0;width:38vw;z-index:2">
+<div data-reveal-img style="position:relative;height:100%;background:var(--surface-media);border-radius:24px 0 0 24px;overflow:hidden">
+<img src="assets/cladding-detail.jpg" loading="lazy" decoding="async" alt="Open-joint heartwood pine cladding beside a full-height glazed opening" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,18,17,.18) 0%,rgba(17,18,17,0) 34%,rgba(17,18,17,.62) 100%)"></div>
+<span style="position:absolute;left:14%;top:26%;display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border-radius:999px 999px 999px 0;background:rgba(245,244,240,.14);backdrop-filter:blur(14px) saturate(1.1);-webkit-backdrop-filter:blur(14px) saturate(1.1);border:1px solid rgba(245,244,240,.32);font-size:11px;letter-spacing:.08em;color:#F5F4F0;white-space:nowrap"><span style="opacity:.72">1.1</span>Cladding</span>
+<span style="position:absolute;left:min(52%,calc(100% - 150px));top:14%;display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border-radius:999px 999px 999px 0;background:rgba(245,244,240,.14);backdrop-filter:blur(14px) saturate(1.1);-webkit-backdrop-filter:blur(14px) saturate(1.1);border:1px solid rgba(245,244,240,.32);font-size:11px;letter-spacing:.08em;color:#F5F4F0;white-space:nowrap"><span style="opacity:.72">1.2</span>Structure</span>
+<span style="position:absolute;left:40%;top:63%;display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border-radius:999px 999px 999px 0;background:rgba(245,244,240,.14);backdrop-filter:blur(14px) saturate(1.1);-webkit-backdrop-filter:blur(14px) saturate(1.1);border:1px solid rgba(245,244,240,.32);font-size:11px;letter-spacing:.08em;color:#F5F4F0;white-space:nowrap"><span style="opacity:.72">1.3</span>Openings</span>
+</div></div>
+<div style="max-width:1440px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px">
+<div style="grid-column:1 / span 6;display:flex;flex-direction:column;gap:72px">
+<h2 data-reveal style="margin:0;font-weight:500;font-size:clamp(34px,4.4vw,64px);line-height:1;letter-spacing:-.04em;max-width:15ch">Untreated pine silvers in three winters. After that we never touch it.</h2>
+<div style="display:flex;flex-direction:column">
+<div data-reveal-group style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px">
+<div data-reveal style="position:relative;display:flex;flex-direction:column;gap:16px;padding:30px 26px 28px;border:1px solid rgba(245,244,240,.16);border-radius:24px;background:rgba(245,244,240,.03)" style-hover="border-color:rgba(245,244,240,.34)">
+<span style="position:absolute;left:22px;top:-4px;width:7px;height:7px;border-radius:999px;background:#9BA08B"></span>
+<span style="font-size:11px;letter-spacing:.08em;color:#9BA08B">1.1</span>
+<span style="font-weight:500;font-size:22px;letter-spacing:-.025em">Cladding</span>
+<span style="font-size:13.5px;line-height:1.62;color:rgba(245,244,240,.66)">Heartwood pine, 26 mm, vertical, open joint. No stain, no coating, no maintenance cycle.</span>
+</div>
+<div data-reveal style="position:relative;display:flex;flex-direction:column;gap:16px;padding:30px 26px 28px;border:1px solid rgba(245,244,240,.16);border-radius:24px;background:rgba(245,244,240,.03)" style-hover="border-color:rgba(245,244,240,.34)">
+<span style="position:absolute;left:22px;top:-4px;width:7px;height:7px;border-radius:999px;background:#9BA08B"></span>
+<span style="font-size:11px;letter-spacing:.08em;color:#9BA08B">1.2</span>
+<span style="font-weight:500;font-size:22px;letter-spacing:-.025em">Structure</span>
+<span style="font-size:13.5px;line-height:1.62;color:rgba(245,244,240,.66)">Cross-laminated spruce, cut to the millimetre in Trondheim, carrying 2 kN/m² of snow.</span>
+</div>
+<div data-reveal style="position:relative;display:flex;flex-direction:column;gap:16px;padding:30px 26px 28px;border:1px solid rgba(245,244,240,.16);border-radius:24px;background:rgba(245,244,240,.03)" style-hover="border-color:rgba(245,244,240,.34)">
+<span style="position:absolute;left:22px;top:-4px;width:7px;height:7px;border-radius:999px;background:#9BA08B"></span>
+<span style="font-size:11px;letter-spacing:.08em;color:#9BA08B">1.3</span>
+<span style="font-weight:500;font-size:22px;letter-spacing:-.025em">Openings</span>
+<span style="font-size:13.5px;line-height:1.62;color:rgba(245,244,240,.66)">Triple glazing in dark anodised aluminium, U 0.7, tested at −35 °C before it leaves the hall.</span>
+</div>
+<div data-reveal style="position:relative;display:flex;flex-direction:column;gap:16px;padding:30px 26px 28px;border:1px solid rgba(245,244,240,.16);border-radius:24px;background:rgba(245,244,240,.03)" style-hover="border-color:rgba(245,244,240,.34)">
+<span style="position:absolute;left:22px;top:-4px;width:7px;height:7px;border-radius:999px;background:#9BA08B"></span>
+<span style="font-size:11px;letter-spacing:.08em;color:#9BA08B">1.4</span>
+<span style="font-weight:500;font-size:22px;letter-spacing:-.025em">Services</span>
+<span style="font-size:13.5px;line-height:1.62;color:rgba(245,244,240,.66)">Balanced ventilation with 85 % heat recovery, ducted inside the floor cassette.</span>
+</div>
+</div>
+</div></div></div>
+</section>
+
+<section id="projects" style="max-width:1440px;margin:0 auto;padding:225px 32px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;row-gap:96px">
+<h2 data-reveal style="grid-column:1 / span 5;margin:0;align-self:start;font-weight:500;font-size:clamp(30px,3.4vw,48px);line-height:1.02;letter-spacing:-.035em">Forty-two houses, standing.</h2>
+<p data-reveal style="grid-column:8 / span 4;margin:0;align-self:start;font-size:15px;line-height:1.62;color:#6F706D">Rock, sand, forest floor, reclaimed farmland. The catalogue stayed the same; the ground did not.</p>
+<div data-reveal-img style="grid-column:1 / span 7">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.ProjectCard" src="assets/mountain-retreat.jpg" alt="Mountain Retreat above a fjord in Lofoten" title="Mountain Retreat" location="Lofoten, Norway" area="164 m²" year="2025" size="lg" ratio="editorial" hint-size="100%,460px"></x-import>
+</div>
+<div data-reveal style="grid-column:9 / span 4;align-self:end;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column">
+<sc-for list="{{ index }}" as="row" hint-placeholder-count="5">
+<a href="#" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:baseline;padding:14px 0;border-top:1px solid #D7D6D0;text-decoration:none;color:#111111" style-hover="color:#777C68">
+<span style="font-weight:500;font-size:15px;letter-spacing:-.01em">{{ row.name }}</span>
+<span style="font-size:11px;letter-spacing:.06em;color:#6F706D">{{ row.place }}</span>
+</a>
+</sc-for>
+</div>
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.ArrowLink" href="#projects" hint-size="auto,20px">Open the project index</x-import>
+</div>
+<div data-reveal-img style="grid-column:2 / span 4">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.ProjectCard" src="assets/coastal-villa.jpg" alt="Coastal Villa in the dunes at Skagen" title="Coastal Villa" location="Skagen, Denmark" area="96 m²" year="2025" ratio="portrait" hint-size="100%,420px"></x-import>
+</div>
+<div data-reveal-img style="grid-column:7 / span 6;margin-top:112px">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.ProjectCard" src="assets/dune-house.jpg" alt="Dune House behind marram grass on Rømø" title="Dune House" location="Rømø, Denmark" area="140 m²" year="2024" ratio="panorama" hint-size="100%,300px"></x-import>
+</div>
+</section>
+
+<section id="studio" style="max-width:1440px;margin:0 auto;padding:225px 32px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:start">
+<h2 data-reveal style="grid-column:1 / span 5;margin:0;font-weight:500;font-size:clamp(30px,3.4vw,48px);line-height:1.02;letter-spacing:-.035em;text-wrap:pretty">Seventeen people in a hall in Trondheim.</h2>
+<div data-reveal style="grid-column:7 / span 5;display:flex;flex-direction:column;gap:34px">
+<p style="margin:0;max-width:44ch;font-size:15px;line-height:1.62;color:#6F706D">Four architects, nine joiners, two engineers and two people who answer the phone. We build twelve houses a year because that is how many we can stand behind.</p>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid #D7D6D0;padding-top:26px">
+<span style="display:flex;flex-direction:column;gap:9px"><span style="font-weight:400;font-size:clamp(28px,2.6vw,38px);letter-spacing:-.045em;line-height:.9">17</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">In the studio</span></span>
+<span style="display:flex;flex-direction:column;gap:9px"><span style="font-weight:400;font-size:clamp(28px,2.6vw,38px);letter-spacing:-.045em;line-height:.9">12</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Houses a year</span></span>
+<span style="display:flex;flex-direction:column;gap:9px"><span style="font-weight:400;font-size:clamp(28px,2.6vw,38px);letter-spacing:-.045em;line-height:.9">2014</span><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Founded</span></span>
+</div>
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.ArrowLink" href="#contact" hint-size="auto,20px">Write to the studio</x-import>
+</div>
+</section>
+<section style="margin-top:225px">
+<div data-reveal-img data-parallax><x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="panorama" radius="none" src="assets/studio-hall.jpg" placeholder-label="The studio · production hall, Trondheim" alt="The NORDHAUS team in the production hall in Trondheim" hint-size="100%,420px"></x-import></div>
+</section>
+
+
+<sc-if value="{{ showOwner }}" hint-placeholder-val="{{ true }}">
+<section id="owners" style="max-width:1440px;margin:0 auto;padding:225px 32px 0">
+<div data-reveal style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:end;margin-bottom:56px">
+<h2 style="grid-column:1 / span 6;margin:0;font-weight:500;font-size:clamp(30px,3.4vw,48px);line-height:1.02;letter-spacing:-.035em;text-wrap:pretty">Owners, in their own words.</h2>
+<p style="grid-column:8 / span 4;margin:0;font-size:15px;line-height:1.62;color:#6F706D">Three houses, three landscapes. Each owner moved in within a year of the first drawing.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:stretch">
+<div style="grid-column:1 / span 3;display:flex;flex-direction:column;justify-content:flex-end;gap:22px">
+<button type="button" onClick="{{ ownerPrev }}" style="display:flex;align-items:center;gap:12px;padding:0;background:none;border:0;cursor:pointer;font-family:inherit;color:#6F706D;transition:color 200ms" style-hover="color:#111111">
+<span style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:999px;border:1px solid #D7D6D0;font-size:15px">←</span>
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Previous owner</span>
+</button>
+<div style="display:flex;flex-direction:column;gap:20px;padding:26px 24px;border-radius:24px 24px 24px 0;background:#111211;color:#F5F4F0">
+<div style="display:flex;align-items:center;gap:14px">
+{{ prevAvatar }}
+<span style="display:flex;flex-direction:column;gap:5px"><span style="font-weight:500;font-size:15px;letter-spacing:-.01em">{{ prevName }}</span><span style="font-size:11px;letter-spacing:.05em;color:rgba(245,244,240,.6)">{{ prevRole }}</span></span>
+</div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid rgba(245,244,240,.16);padding-top:16px">
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,244,240,.6)">On site</span>
+<span style="font-weight:500;font-size:19px;letter-spacing:-.02em">{{ prevDays }}<span style="font-size:11px;letter-spacing:.06em;padding-left:5px;color:rgba(245,244,240,.6)">days</span></span>
+</div>
+</div>
+</div>
+<div data-reveal-img style="grid-column:4 / span 3;position:relative">
+{{ ownerPortrait }}
+</div>
+<div data-reveal style="grid-column:7 / span 4;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:4px 0">
+<div style="display:flex;flex-direction:column;gap:26px">
+<p style="margin:0;font-weight:400;font-size:clamp(21px,2vw,27px);line-height:1.28;letter-spacing:-.025em;text-wrap:pretty">“{{ ownerQuote }}”</p>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;border-top:1px solid #D7D6D0;padding-top:22px">
+<span style="display:flex;flex-direction:column;gap:8px"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Plan</span><span style="font-size:14px">{{ ownerPlan }}</span></span>
+<span style="display:flex;flex-direction:column;gap:8px"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Moved in</span><span style="font-size:14px">{{ ownerMoved }}</span></span>
+<span style="display:flex;flex-direction:column;gap:8px"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Setting</span><span style="font-size:14px">{{ ownerSetting }}</span></span>
+</div>
+</div>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px">
+<span style="display:flex;flex-direction:column;gap:6px">
+<span style="font-weight:500;font-size:16px;letter-spacing:-.015em">{{ ownerName }}</span>
+<span style="font-size:11px;letter-spacing:.05em;color:#6F706D">{{ ownerRole }}</span>
+</span>
+<span style="display:flex;align-items:center;gap:14px">
+<span style="display:flex;flex-direction:column;gap:6px;align-items:flex-end"><span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F706D">Would build again</span><span style="font-size:13px;letter-spacing:.18em;color:#777C68">★★★★★</span></span>
+<button type="button" onClick="{{ ownerNext }}" style="display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;min-width:48px;height:48px;border-radius:999px;border:0;background:#111211;color:#F5F4F0;font-size:16px;cursor:pointer;font-family:inherit;transition:background 200ms" style-hover="background:#2A2B28">→</button>
+</span>
+</div>
+</div>
+<div style="grid-column:11 / span 2;display:flex;flex-direction:column;justify-content:center">
+{{ nextPortrait }}
+</div>
+</div>
+</section>
+</sc-if>
+
+<section style="margin-top:225px">
+<div data-reveal-img data-parallax><x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="hero" radius="none" src="assets/interior-winter-bay.jpg" placeholder-label="Interior · winter light across the long bay, Haus 164" hint-size="100%,56vw"></x-import></div>
+</section>
+
+<section id="faq" style="max-width:1440px;margin:0 auto;padding:225px 32px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px">
+<div data-reveal style="grid-column:1 / span 3;display:flex;flex-direction:column;gap:32px">
+<p style="margin:0;font-weight:500;font-size:clamp(22px,2.1vw,30px);line-height:1.16;letter-spacing:-.03em;color:#111211;text-wrap:pretty">Before you write to us.</p>
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Figure" ratio="tall" radius="lg" src="assets/door-reveal-oak.jpg" placeholder-label="Detail · door reveal, oiled oak" alt="Oiled oak door reveal against pine cladding" hint-size="100%,300px"></x-import>
+</div>
+<div data-reveal style="grid-column:5 / span 8">
+<x-import component-from-global-scope="NORDHAUSDesignSystem_74af41.Accordion" items="{{ faq }}" hint-size="100%,380px"></x-import>
+</div></section>
+
+<section id="contact" style="max-width:1440px;margin:0 auto;padding:225px 32px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:start">
+<div data-reveal style="grid-column:1 / span 5;display:flex;flex-direction:column;gap:40px">
+<h2 style="margin:0;font-weight:500;font-size:clamp(34px,4vw,58px);line-height:1.02;letter-spacing:-.04em;text-wrap:pretty">Tell us about the site. We will tell you what can be built on it.</h2>
+<p style="margin:0;max-width:34ch;font-size:15px;line-height:1.62;color:#6F706D">Send a location and a rough brief. An architect replies, within two working days.</p>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
+<a href="mailto:studio@nordhaus.no" style="color:#111211;text-decoration:none;border-bottom:1px solid #D7D6D0;align-self:flex-start;padding-bottom:2px">studio@nordhaus.no</a>
+<span style="color:#6F706D">+47 73 84 10 60</span>
+</div>
+</div>
+<form data-reveal onSubmit="{{ formSubmit }}" noValidate="{{ true }}" style="grid-column:7 / span 6;display:flex;flex-direction:column;gap:38px;background:#111211;color:#F5F4F0;border-radius:24px;padding:48px">
+<p style="margin:0;max-width:22ch;font-weight:500;font-size:clamp(22px,2.2vw,31px);line-height:1.14;letter-spacing:-.03em">Leave your contacts and we will write back.</p>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 32px">
+<label style="display:flex;flex-direction:column;gap:9px">
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:{{ nameTone }}">Your name<span style="color:#9BA08B">*</span></span>
+<input name="name" type="text" value="{{ fName }}" onChange="{{ setName }}" placeholder="Ingrid Solheim" style="width:100%;padding:10px 0;border:0;border-bottom:1px solid {{ nameRule }};background:none;font-size:16px;color:#F5F4F0;outline:none">
+</label>
+<label style="display:flex;flex-direction:column;gap:9px">
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:{{ emailTone }}">Email<span style="color:#9BA08B">*</span></span>
+<input name="email" type="email" value="{{ fEmail }}" onChange="{{ setEmail }}" placeholder="you@domain.no" style="width:100%;padding:10px 0;border:0;border-bottom:1px solid {{ emailRule }};background:none;font-size:16px;color:#F5F4F0;outline:none">
+</label>
+<label style="display:flex;flex-direction:column;gap:9px">
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:{{ siteTone }}">Site location<span style="color:#9BA08B">*</span></span>
+<input name="site" type="text" value="{{ fSite }}" onChange="{{ setSite }}" placeholder="Municipality, or a map link" style="width:100%;padding:10px 0;border:0;border-bottom:1px solid {{ siteRule }};background:none;font-size:16px;color:#F5F4F0;outline:none">
+</label>
+<label style="display:flex;flex-direction:column;gap:9px">
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,244,240,.6)">Plan of interest</span>
+<select name="plan" value="{{ fPlan }}" onChange="{{ setPlan }}" style="width:100%;padding:10px 0;border:0;border-bottom:1px solid rgba(245,244,240,.28);background:#111211;font-size:16px;color:#F5F4F0;outline:none;appearance:none;border-radius:0">
+<option value="Undecided">Undecided</option>
+<option value="Haus 72">Haus 72</option>
+<option value="Haus 118">Haus 118</option>
+<option value="Haus 164">Haus 164</option>
+</select>
+</label>
+</div>
+<label style="display:flex;flex-direction:column;gap:9px">
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,244,240,.6)">The brief</span>
+<textarea name="brief" rows="3" value="{{ fBrief }}" onChange="{{ setBrief }}" placeholder="Ground conditions, how you want to live in it, when you hope to move in." style="width:100%;padding:10px 0;border:0;border-bottom:1px solid rgba(245,244,240,.28);background:none;font-size:16px;line-height:1.6;color:#F5F4F0;outline:none;resize:vertical;font-family:inherit"></textarea>
+</label>
+<div style="display:flex;flex-direction:column;gap:18px">
+<button type="submit" style="display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:19px 24px;border:0;border-radius:999px;background:#F5F4F0;color:#111211;font-family:inherit;font-size:16px;font-weight:500;cursor:pointer;transition:background 200ms" style-hover="background:#E9E8E3">Book a consultation<span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;background:#111211;color:#F5F4F0;font-size:13px">↗</span></button>
+<span style="font-size:13.5px;line-height:1.5;color:{{ msgTone }}">{{ formMessage }}</span>
+</div>
+</form>
+</section>
+<footer style="margin-top:160px;background:#111211;color:#F5F4F0;padding:120px 0 44px">
+<div style="max-width:1440px;margin:0 auto;padding:0 32px;display:flex;flex-direction:column;gap:76px">
+<div data-reveal style="display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:48px;align-items:end">
+<p style="margin:0;max-width:20ch;font-weight:400;font-size:clamp(30px,3.6vw,52px);line-height:1.06;letter-spacing:-.04em;text-wrap:pretty">Twelve houses a year. Two slots remain for 2027.</p>
+<div style="display:flex;flex-direction:column;gap:18px">
+<a href="mailto:studio@nordhaus.no" style="font-size:17px;letter-spacing:-.015em;color:#F5F4F0;text-decoration:none;border-bottom:1px solid rgba(245,244,240,.35);padding-bottom:6px;align-self:flex-start;transition:border-color 200ms" style-hover="border-color:#F5F4F0">studio@nordhaus.no</a>
+<span style="font-size:14px;line-height:1.6;color:rgba(245,244,240,.62)">Sagveien 21, 0459 Oslo<br>+47 73 84 10 60</span>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:14px 34px;border-top:1px solid rgba(245,244,240,.16);border-bottom:1px solid rgba(245,244,240,.16);padding:24px 0"><a href="#homes" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Homes</a><a href="#process" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Process</a><a href="#materials" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Materials</a><a href="#projects" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Projects</a><a href="#studio" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Studio</a><a href="#owners" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Owners</a><a href="#faq" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Questions</a><a href="#contact" style="font-size:14.5px;color:rgba(245,244,240,.78);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Contact</a></div>
+<div style="display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:48px;align-items:end">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:420px">
+<span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,244,240,.55)">Studio letter — four notes a year</span>
+<div style="display:flex;align-items:center;gap:14px;border-bottom:1px solid rgba(245,244,240,.3);padding-bottom:10px">
+<input type="email" placeholder="Your email" style="flex:1 1 auto;min-width:0;background:none;border:0;outline:none;font-family:inherit;font-size:15px;color:#F5F4F0">
+<button type="button" style="flex:0 0 auto;background:none;border:0;cursor:pointer;font-family:inherit;font-size:15px;color:rgba(245,244,240,.7);transition:color 200ms" style-hover="color:#F5F4F0">↗</button>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px 22px"><a href="#" style="font-size:13px;color:rgba(245,244,240,.6);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Instagram</a><a href="#" style="font-size:13px;color:rgba(245,244,240,.6);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">Pinterest</a><a href="#" style="font-size:13px;color:rgba(245,244,240,.6);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">LinkedIn</a><a href="#" style="font-size:13px;color:rgba(245,244,240,.6);text-decoration:none;transition:color 200ms" style-hover="color:#F5F4F0">ArchDaily</a></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:18px;border-top:1px solid rgba(245,244,240,.16);padding-top:26px">
+<span style="font-weight:500;font-size:15px;letter-spacing:.22em">NORDHAUS</span>
+<span style="font-size:11.5px;letter-spacing:.05em;color:rgba(245,244,240,.5)">© 2026 Nordhaus AS · Org. 918 442 771 · Oslo · Bergen · Tromsø</span>
+</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;showOwner&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;indexRows&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:5,&quot;min&quot;:3,&quot;max&quot;:8,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+const PLANS = [
+  { key: "72", name: "Haus 72", label: "Haus 72 · three bays, single aspect", specs: ["62", "3", "4.2", "21", "8"], src: "assets/haus-72.jpg",
+    rows: [
+      { label: "Footprint", value: "8.4 × 9.0", unit: "m" },
+      { label: "Bays", value: "3" },
+      { label: "Ridge height", value: "4.2", unit: "m" },
+      { label: "Glazed area", value: "21", unit: "m²" },
+      { label: "Heating demand", value: "38", unit: "kWh/m²·yr" },
+      { label: "Factory build", value: "8", unit: "weeks" },
+    ] },
+  { key: "118", name: "Haus 118", label: "Haus 118 · five bays, corner glazing", specs: ["84", "5", "4.6", "34", "11"], src: "assets/haus-118.jpg",
+    rows: [
+      { label: "Footprint", value: "8.4 × 14.0", unit: "m" },
+      { label: "Bays", value: "5" },
+      { label: "Ridge height", value: "4.6", unit: "m" },
+      { label: "Glazed area", value: "34", unit: "m²" },
+      { label: "Heating demand", value: "34", unit: "kWh/m²·yr" },
+      { label: "Factory build", value: "11", unit: "weeks" },
+    ] },
+  { key: "164", name: "Haus 164", label: "Haus 164 · seven bays, long room to the south", specs: ["116", "7", "4.6", "48", "13"], src: "assets/haus-164.jpg",
+    rows: [
+      { label: "Footprint", value: "8.4 × 19.5", unit: "m" },
+      { label: "Bays", value: "7" },
+      { label: "Ridge height", value: "4.6", unit: "m" },
+      { label: "Glazed area", value: "48", unit: "m²" },
+      { label: "Heating demand", value: "31", unit: "kWh/m²·yr" },
+      { label: "Factory build", value: "13", unit: "weeks" },
+    ] },
+];
+
+const INDEX = [
+  { ref: "0124", name: "Lakeside House", place: "Dalarna · 2024" },
+  { ref: "0045", name: "Coastal Villa", place: "Skagen · 2025" },
+  { ref: "0008", name: "Dune House", place: "Rømø · 2024" },
+  { ref: "0231", name: "Forest Studio", place: "Nuuksio · 2023" },
+  { ref: "0356", name: "Fjord Annexe", place: "Hardanger · 2026" },
+  { ref: "0402", name: "Orchard House", place: "Fyn · 2026" },
+  { ref: "0511", name: "Tundra Cabin", place: "Kiruna · 2023" },
+  { ref: "0603", name: "Harbour Studio", place: "Ålesund · 2025" },
+];
+
+const OWNERS = [
+  { name: "Ingrid Solheim", role: "Owner, Coastal Villa · Skagen", src: "assets/owner-ingrid.jpg", quote: "We moved in eleven weeks after the slab was poured. Nothing about that felt rushed.", plan: "Haus 118", moved: "March 2025", setting: "Dune, west-facing", days: "9" },
+  { name: "Lars Johansen", role: "Owner, Mountain Retreat · Hemsedal", src: "assets/owner-lars.jpg", quote: "The house arrived finished. We spent the week unpacking, not waiting on trades.", plan: "Haus 164", moved: "October 2024", setting: "Treeline, 820 m", days: "11" },
+  { name: "Marit Dahl", role: "Owner, Dune House · Jæren", src: "assets/owner-marit.jpg", quote: "Two rooms, one long window. After a winter here I would not add a square metre.", plan: "Haus 72", moved: "June 2025", setting: "Coast, salt exposure", days: "7" },
+  { name: "Sofie Berg", role: "Owner, Orchard House · Fyn", src: "assets/owner-sofie.jpg", quote: "The price we agreed in February was the price we paid in November. No provisional sums.", plan: "Haus 118", moved: "November 2025", setting: "Orchard, level ground", days: "8" },
+];
+
+class Component extends DCLogic {
+  state = { plan: 1, owner: 0, form: { name: "", email: "", site: "", plan: "Undecided", brief: "" }, errors: {}, sent: false };
+
+  componentDidMount() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const root = document.getElementById("dc-root");
+    if (!root || !("IntersectionObserver" in window)) return;
+    root.classList.add("nh-motion");
+    // safety net only — reveals what is already on screen if the observer never fires,
+    // so everything below the fold still animates on scroll
+    this._failsafe = setTimeout(() => {
+      if (root.querySelector("[data-reveal].is-in,[data-reveal-img].is-in")) return;
+      root.querySelectorAll("[data-reveal],[data-reveal-img]").forEach((el) => {
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add("is-in");
+      });
+    }, 2500);
+
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        e.target.classList.add("is-in");
+        io.unobserve(e.target);
+      }
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.08 });
+
+    const mark = () => {
+      root.querySelectorAll("[data-reveal],[data-reveal-img]").forEach((el) => {
+        if (el.dataset.nhWatched) return;
+        el.dataset.nhWatched = "1";
+        const group = el.closest("[data-reveal-group]");
+        if (group) {
+          const sibs = [...group.querySelectorAll("[data-reveal],[data-reveal-img]")].filter((n) => n.parentElement === group || n.closest("[data-reveal-group]") === group);
+          const i = sibs.indexOf(el);
+          if (i > 0) el.style.setProperty("--d", Math.min(i, 5) * 90 + "ms");
+        } else if (el.hasAttribute("data-reveal") && el.previousElementSibling && el.previousElementSibling.hasAttribute("data-reveal-img")) {
+          el.style.setProperty("--d", "160ms");
+        }
+        io.observe(el);
+      });
+    };
+    mark();
+    this._motionTimer = setInterval(mark, 400);
+    setTimeout(() => clearInterval(this._motionTimer), 6000);
+
+    // second driver: rect-based, so reveals also track scroll when the page is
+    // scrolled by a host container rather than the window itself
+    let raf = 0;
+    const tick = () => {
+      raf = 0;
+      const vh = window.innerHeight;
+      root.querySelectorAll("[data-reveal]:not(.is-in),[data-reveal-img]:not(.is-in)").forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.92 && r.bottom > 0) el.classList.add("is-in");
+      });
+      root.querySelectorAll("[data-parallax]").forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.bottom < -200 || r.top > vh + 200) return;
+        const p = (r.top + r.height / 2 - vh / 2) / vh;
+        el.style.transform = "translate3d(0," + (-p * 18).toFixed(2) + "px,0)";
+      });
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    this._onScroll = onScroll;
+    window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("scroll", onScroll, { passive: true, capture: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    onScroll();
+    this._io = io;
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._motionTimer) clearInterval(this._motionTimer);
+    if (this._failsafe) clearTimeout(this._failsafe);
+    if (this._onScroll) {
+      window.removeEventListener("scroll", this._onScroll);
+      document.removeEventListener("scroll", this._onScroll, true);
+      window.removeEventListener("resize", this._onScroll);
+    }
+  }
+
+  setField(key) {
+    return (e) => {
+      const v = e.target.value;
+      this.setState((s) => ({ form: { ...s.form, [key]: v }, errors: { ...s.errors, [key]: false }, sent: false }));
+    };
+  }
+
+  submitForm = (e) => {
+    e.preventDefault();
+    const f = this.state.form;
+    const errors = {
+      name: !f.name.trim(),
+      email: !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.trim()),
+      site: !f.site.trim(),
+    };
+    const bad = Object.keys(errors).filter((k) => errors[k]);
+    if (bad.length) { this.setState({ errors, sent: false }); return; }
+    this.setState({ errors: {}, sent: true });
+  };
+  renderVals() {
+    const active = PLANS[this.state.plan] || PLANS[0];
+    const count = Math.max(3, Math.min(8, this.props.indexRows ?? 5));
+    return {
+      showOwner: this.props.showOwner ?? true,
+      fName: this.state.form.name,
+      fEmail: this.state.form.email,
+      fSite: this.state.form.site,
+      fPlan: this.state.form.plan,
+      fBrief: this.state.form.brief,
+      setName: this.setField("name"),
+      setEmail: this.setField("email"),
+      setSite: this.setField("site"),
+      setPlan: this.setField("plan"),
+      setBrief: this.setField("brief"),
+      formSubmit: this.submitForm,
+      nameRule: this.state.errors.name ? "#F5F4F0" : "rgba(245,244,240,.28)",
+      emailRule: this.state.errors.email ? "#F5F4F0" : "rgba(245,244,240,.28)",
+      siteRule: this.state.errors.site ? "#F5F4F0" : "rgba(245,244,240,.28)",
+      nameTone: this.state.errors.name ? "#F5F4F0" : "rgba(245,244,240,.6)",
+      emailTone: this.state.errors.email ? "#F5F4F0" : "rgba(245,244,240,.6)",
+      siteTone: this.state.errors.site ? "#F5F4F0" : "rgba(245,244,240,.6)",
+      msgTone: this.state.sent ? "#F5F4F0" : "#9BA08B",
+      formMessage: this.state.sent
+        ? "Sent. An architect replies within two working days."
+        : (Object.keys(this.state.errors).some((k) => this.state.errors[k])
+            ? "Three fields are needed before we can answer: name, email, site."
+            : ""),
+      nav: [
+        { label: "Homes", href: "#homes" },
+        { label: "Process", href: "#process" },
+        { label: "Materials", href: "#materials" },
+        { label: "Projects", href: "#projects" },
+        { label: "Studio", href: "#studio" },
+        { label: "Owners", href: "#owners" },
+        { label: "Questions", href: "#faq" },
+        { label: "Contact", href: "#contact" },
+      ],
+      ownerName: OWNERS[this.state.owner].name,
+      ownerRole: OWNERS[this.state.owner].role,
+      ownerPortrait: React.createElement("span", { role: "img", "aria-label": OWNERS[this.state.owner].name + ", owner", style: { display: "block", width: "100%", height: "100%", minHeight: 420, borderRadius: 24, background: "#E9E8E3 center/cover no-repeat url(" + OWNERS[this.state.owner].src + ")" } }),
+      ownerQuote: OWNERS[this.state.owner].quote,
+      ownerPlan: OWNERS[this.state.owner].plan,
+      ownerMoved: OWNERS[this.state.owner].moved,
+      ownerSetting: OWNERS[this.state.owner].setting,
+      prevName: OWNERS[(this.state.owner + OWNERS.length - 1) % OWNERS.length].name,
+      prevRole: OWNERS[(this.state.owner + OWNERS.length - 1) % OWNERS.length].role,
+      prevAvatar: React.createElement("span", { style: { width: 46, height: 46, flex: "0 0 46px", borderRadius: 999, background: "#2A2B28 center/cover no-repeat url(" + OWNERS[(this.state.owner + OWNERS.length - 1) % OWNERS.length].src + ")" } }),
+      prevDays: OWNERS[(this.state.owner + OWNERS.length - 1) % OWNERS.length].days,
+      nextPortrait: React.createElement("span", { style: { display: "block", width: "100%", height: "62%", minHeight: 210, borderRadius: 24, opacity: .55, background: "#E9E8E3 center/cover no-repeat url(" + OWNERS[(this.state.owner + 1) % OWNERS.length].src + ")" } }),
+      ownerNext: () => this.setState(st => ({ owner: (st.owner + 1) % OWNERS.length })),
+      ownerPrev: () => this.setState(st => ({ owner: (st.owner + OWNERS.length - 1) % OWNERS.length })),
+      planLabel: active.label,
+      planSrc: active.src,
+      planName: active.name,
+      specArea: active.specs[0],
+      specBays: active.specs[1],
+      specRidge: active.specs[2],
+      specGlazed: active.specs[3],
+      specWeeks: active.specs[4],
+      pick1: () => this.setState({ plan: 0 }),
+      pick2: () => this.setState({ plan: 1 }),
+      pick3: () => this.setState({ plan: 2 }),
+      tone1: this.state.plan === 0 ? "#111111" : "#6F706D",
+      tone2: this.state.plan === 1 ? "#111111" : "#6F706D",
+      tone3: this.state.plan === 2 ? "#111111" : "#6F706D",
+      dot1: this.state.plan === 0 ? 1 : 0,
+      dot2: this.state.plan === 1 ? 1 : 0,
+      dot3: this.state.plan === 2 ? 1 : 0,
+      fill1: this.state.plan === 0 ? "rgba(233,232,227,.85)" : "transparent",
+      fill2: this.state.plan === 1 ? "rgba(233,232,227,.85)" : "transparent",
+      fill3: this.state.plan === 2 ? "rgba(233,232,227,.85)" : "transparent",
+      rule1: this.state.plan === 0 ? "#111211" : "#D7D6D0",
+      rule2: this.state.plan === 1 ? "#111211" : "#D7D6D0",
+      rule3: this.state.plan === 2 ? "#111211" : "#D7D6D0",
+      index: INDEX.slice(0, count),
+      faq: [
+        { question: "How long does the whole process take?", answer: "Twenty-two weeks from the first walk on the plot to keys: two weeks of site study, six weeks of drawings, eleven weeks in the factory, nine days of assembly." },
+        { question: "How long does installation take?", answer: "Nine days on a prepared foundation, with the envelope closed on day four. Factory production runs ahead of it and takes a further eleven weeks." },
+        { question: "Does the untreated cladding need maintenance?", answer: "No. Heartwood pine at 26 mm silvers evenly over three winters and is left alone after that — no stain, no coating, no maintenance cycle." },
+        { question: "Can the design be adapted?", answer: "Layouts, finishes, cladding and glazing can be tailored within the structural grid. The grid itself is fixed — that is what keeps the price fixed." },
+        { question: "Are the homes suitable for all climates?", answer: "They are built for the Nordic range: −35 °C to +30 °C, coastal salt exposure and 2 kN/m² snow load as standard." },
+        { question: "Who do we deal with?", answer: "One architect and one project lead stay with the project from the site study to handover." },
+        { question: "What is included in the price?", answer: "Structure, envelope, windows, services and interior finishes. Foundations and utility connections are quoted after the site study." },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

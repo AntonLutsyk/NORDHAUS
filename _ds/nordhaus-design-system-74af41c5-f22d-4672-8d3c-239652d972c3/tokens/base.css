@@ -1,0 +1,23 @@
+/* NORDHAUS base element defaults. Kept minimal — components carry their own styling. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-size-adjust:100%}
+body{margin:0;background:var(--surface-page);color:var(--text-primary);font:var(--text-body-font);letter-spacing:var(--tracking-body);text-wrap:pretty}
+h1,h2,h3,h4,h5,h6{margin:0;font-family:var(--font-display);font-weight:var(--weight-medium);letter-spacing:var(--tracking-display);line-height:var(--leading-display);text-wrap:balance}
+p{margin:0}
+img{display:block;max-width:100%}
+a{color:var(--text-primary);text-decoration:none;text-underline-offset:4px;text-decoration-thickness:1px;transition:color var(--transition-ui),opacity var(--transition-ui)}
+a:hover{color:var(--text-primary);text-decoration:underline;text-decoration-color:var(--border-strong)}
+button,input,textarea,select{font:inherit;letter-spacing:inherit;color:inherit}
+hr{border:0;border-top:var(--border-hair);margin:0}
+::selection{background:var(--nh-olive-300);color:var(--nh-ink-950)}
+:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+
+/* Utility type classes — for specimen cards and quick prose blocks. */
+.nh-hero{font:var(--text-hero-font);letter-spacing:var(--tracking-hero)}
+.nh-display-1{font:var(--text-display-1-font);letter-spacing:var(--tracking-display)}
+.nh-display-2{font:var(--text-display-2-font);letter-spacing:var(--tracking-display)}
+.nh-display-3{font:var(--text-display-3-font);letter-spacing:var(--tracking-display)}
+.nh-title{font:var(--text-title-font);letter-spacing:var(--tracking-title)}
+.nh-body{font:var(--text-body-font);color:var(--text-secondary)}
+.nh-meta{font:var(--text-meta-font);letter-spacing:var(--tracking-meta-wide);text-transform:uppercase;color:var(--text-secondary)}
+.nh-rule{height:1px;background:var(--border-hairline)}

@@ -1,0 +1,26 @@
+/* NORDHAUS layout — 1440px canvas, 12 columns, 24–32px gutters. */
+:root{
+  --page-max:1440px;
+  --page-gutter:32px;
+  --page-gutter-sm:24px;
+  --grid-columns:12; /* @kind other */
+  --grid-gap:24px;
+  --grid-gap-wide:32px;
+  --measure-short:28ch; /* @kind other */
+  --measure:52ch; /* @kind other */
+  --measure-long:68ch; /* @kind other */
+  --header-height:72px;
+
+  /* Image aspect ratios used across the system */
+  --ratio-hero:16/9; /* @kind other */
+  --ratio-landscape:4/3; /* @kind other */
+  --ratio-editorial:3/2; /* @kind other */
+  --ratio-portrait:4/5; /* @kind other */
+  --ratio-tall:3/4; /* @kind other */
+}
+
+.nh-page{max-width:var(--page-max);margin:0 auto;padding-inline:var(--page-gutter)}
+.nh-grid{display:grid;grid-template-columns:repeat(var(--grid-columns),minmax(0,1fr));gap:var(--grid-gap)}
+.nh-grid--wide{gap:var(--grid-gap-wide)}
+.nh-bleed{width:100%;margin-inline:0}
+@media (max-width:1024px){:root{--page-gutter:var(--page-gutter-sm)}}

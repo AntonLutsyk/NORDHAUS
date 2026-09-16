@@ -1,0 +1,53 @@
+/* NORDHAUS typography.
+   One core grotesk (Manrope) carries display through body.
+   One technical mono (IBM Plex Mono) carries metadata, indices and specs.
+   Rule of thumb: display is tight and light-to-medium, never black;
+   body is small, 400 weight, generous leading. */
+:root{
+  --font-core:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --font-display:var(--font-core);
+
+  --weight-extralight:200; /* @kind other */
+  --weight-light:300; /* @kind other */
+  --weight-regular:400; /* @kind other */
+  --weight-medium:500; /* @kind other */
+  --weight-semibold:600; /* @kind other */
+  --weight-bold:700; /* @kind other */
+
+  /* Display / editorial scale (clamped for 1440 → 1024) */
+  --size-hero:clamp(64px,9.2vw,148px);
+  --size-display-1:clamp(48px,5.6vw,88px);
+  --size-display-2:clamp(38px,4.2vw,64px);
+  --size-display-3:clamp(30px,3vw,46px);
+  --size-title-1:28px;
+  --size-title-2:22px;
+  --size-title-3:18px;
+  --size-body-lg:17px;
+  --size-body:15px;
+  --size-body-sm:13.5px;
+  --size-caption:12px;
+  --size-meta:11px;
+
+  --leading-hero:0.88; /* @kind other */
+  --leading-display:1.02; /* @kind other */
+  --leading-title:1.18; /* @kind other */
+  --leading-body:1.62; /* @kind other */
+  --leading-caption:1.45; /* @kind other */
+
+  --tracking-hero:-0.045em; /* @kind other */
+  --tracking-display:-0.035em; /* @kind other */
+  --tracking-title:-0.02em; /* @kind other */
+  --tracking-body:-0.005em; /* @kind other */
+  --tracking-meta:0.08em; /* @kind other */
+  --tracking-meta-wide:0.14em; /* @kind other */
+
+  /* Semantic roles */
+  --text-hero-font:var(--weight-semibold) var(--size-hero)/var(--leading-hero) var(--font-display);
+  --text-display-1-font:var(--weight-medium) var(--size-display-1)/var(--leading-display) var(--font-display);
+  --text-display-2-font:var(--weight-medium) var(--size-display-2)/var(--leading-display) var(--font-display);
+  --text-display-3-font:var(--weight-medium) var(--size-display-3)/1.08 var(--font-display);
+  --text-title-font:var(--weight-medium) var(--size-title-2)/var(--leading-title) var(--font-core);
+  --text-body-font:var(--weight-regular) var(--size-body)/var(--leading-body) var(--font-core);
+  --text-meta-font:var(--weight-regular) var(--size-meta)/1.3 var(--font-mono);
+}

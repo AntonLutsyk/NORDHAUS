@@ -1,0 +1,91 @@
+/* NORDHAUS colour system — a restrained architectural palette.
+   Base values first, semantic aliases second. Never hard-code a hex in a component. */
+:root{
+  /* --- Base: warm neutral ramp (ivory → near-black) --- */
+  --nh-ivory-50:#FAFAF8;
+  --nh-ivory-100:#F5F4F0;
+  --nh-ivory-200:#EFEEE9;
+  --nh-ivory-300:#E9E8E3;
+  --nh-ivory-400:#DEDDD7;
+  --nh-ivory-500:#D7D6D0;
+  --nh-gray-600:#A8A9A4;
+  --nh-gray-700:#6F706D;
+  --nh-gray-800:#3A3B39;
+  --nh-ink-900:#1C1D1B;
+  --nh-ink-950:#111211;
+  --nh-black:#111111;
+
+  /* --- Base: accent (muted natural olive / sage) --- */
+  --nh-olive-100:#E4E5DE;
+  --nh-olive-300:#B9BCAC;
+  --nh-olive-500:#777C68;
+  --nh-olive-700:#5A5F4E;
+
+  /* --- Base: material tints, for chips and diagram fills only --- */
+  --nh-timber:#B08A5E;
+  --nh-stone:#9B9A93;
+  --nh-glass:#AFB9BC;
+
+  /* --- Semantic: surfaces --- */
+  --surface-page:var(--nh-ivory-100);
+  --surface-raised:var(--nh-ivory-50);
+  --surface-sunken:var(--nh-ivory-300);
+  --surface-card:var(--nh-ivory-50);
+  --surface-inverse:var(--nh-ink-950);
+  --surface-inverse-raised:#1A1B19;
+  --surface-media:var(--nh-ivory-300);
+  --surface-accent:var(--nh-olive-500);
+
+  /* --- Semantic: text --- */
+  --text-primary:var(--nh-black);
+  --text-secondary:var(--nh-gray-700);
+  --text-tertiary:var(--nh-gray-600);
+  --text-accent:var(--nh-olive-500);
+  --text-inverse:var(--nh-ivory-100);
+  --text-inverse-secondary:#9C9E98;
+  --text-on-accent:var(--nh-ivory-100);
+
+  /* --- Semantic: lines --- */
+  --border-hairline:var(--nh-ivory-500);
+  --border-strong:var(--nh-gray-600);
+  --border-inverse:#2C2D2A;
+  --border-focus:var(--nh-olive-500);
+
+  /* --- Semantic: interactive --- */
+  --action-solid-bg:var(--nh-black);
+  --action-solid-bg-hover:var(--nh-gray-800);
+  --action-solid-fg:var(--nh-ivory-100);
+  --action-quiet-fg:var(--nh-black);
+  --action-quiet-border:var(--nh-ivory-500);
+  --action-quiet-border-hover:var(--nh-black);
+  --action-disabled-fg:var(--nh-gray-600);
+  --action-disabled-border:var(--nh-ivory-400);
+
+  /* --- Semantic: overlays on photography --- */
+  --scrim-image:rgba(17,18,17,.34);
+  --scrim-image-strong:rgba(17,18,17,.58);
+  --scrim-gradient:linear-gradient(180deg,rgba(17,18,17,0) 40%,rgba(17,18,17,.62) 100%); /* @kind other */
+}
+
+/* Dark editorial sections. Apply to any container: <section class="nh-dark"> */
+.nh-dark{
+  --surface-page:var(--nh-ink-950);
+  --surface-raised:var(--surface-inverse-raised);
+  --surface-sunken:#0B0C0B;
+  --surface-card:var(--surface-inverse-raised);
+  --surface-media:#232420;
+  --text-primary:var(--nh-ivory-100);
+  --text-secondary:var(--text-inverse-secondary);
+  --text-tertiary:#74766F;
+  --text-accent:var(--nh-olive-300);
+  --border-hairline:var(--border-inverse);
+  --border-strong:#3E403B;
+  --action-solid-bg:var(--nh-ivory-100);
+  --action-solid-bg-hover:#FFFFFF;
+  --action-solid-fg:var(--nh-ink-950);
+  --action-quiet-fg:var(--nh-ivory-100);
+  --action-quiet-border:#33342F;
+  --action-quiet-border-hover:var(--nh-ivory-100);
+  background:var(--surface-page);
+  color:var(--text-primary);
+}
